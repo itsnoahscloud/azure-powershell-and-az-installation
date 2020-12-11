@@ -1,3 +1,5 @@
+#############################################################################################
+
 # Update msonline
 update-module -name msonline
 
@@ -15,3 +17,5 @@ if ($PSVersionTable.PSEdition -eq 'Desktop' -and (Get-Module -Name AzureRM -List
 
 # Install or update Azure CLI
 Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; rm .\AzureCLI.msi
+
+#############################################################################################
